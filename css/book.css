@@ -1,0 +1,115 @@
+@import url("/css/fontawesome-free/css/all.css");
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+}
+header{
+  padding: 50px;
+  height: 400px;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+}
+footer{
+  width: 100%;
+  -webkit-background-size: cover;
+  bottom: 0;
+  background-color: #999999;
+}
+main{
+  margin: 0 auto;
+  padding: 30px 20px;
+  min-height: calc(100vh - 400px - 297.87px);
+  text-align: center;
+  background-color: #f2f2f2;
+}
+.topnav{
+  margin-top: 20px;
+  margin-left: 40px; 
+  background-color:  #999999;
+  width: 30%;
+  top:0;
+  bottom:0;
+  
+}
+.topnav ul{
+  float: left;
+  text-align: center;
+  font-size: 17px;
+  text-decoration: none;
+  display: inline-flex;
+  list-style: none;
+}
+.topnav ul li{
+padding: 20px;
+font-size: 1em;
+list-style: none;
+color: white;
+width: 200px;
+}
+.topnav ul li a{
+  color: white;
+  text-decoration: none;
+}
+.active, .topnav ul li:hover{
+  background-color: #999999;
+  color: black;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.column{
+  width: 50%;
+  float: left;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.email{
+  font-size: 1em;
+  margin-left: 10px;
+  height: 30px;
+}
+.comment{
+  font-size: 1.2em;
+  margin-left: 10px;
+  width: 30%;
+  height: 50px;
+}
+.submitbutton{
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+.submitbutton:hover{
+  background-color: #4d4d4d;
+}
+.copyright{
+  position: fixed;
+  bottom: 0;
+  margin-left: 40%;
+  font-size: 1.2em;
+}
+a{
+font-size: 1.3em;
+}
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+.shift{
+    margin-left: 20px;
+}
+.uiview{
+  padding-left: 60px;
+  padding-right: 60px;
+}

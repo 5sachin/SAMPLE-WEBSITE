@@ -1,0 +1,84 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>ONLINE BOOKS</title>
+	<!-- <link rel="stylesheet"  href="/css/bootstrap.min.css"> -->
+    <link rel="stylesheet"  href="css/book.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body ng-app="bookwebsite">
+  <loading class="loading-indicator"></loading>
+	<header>
+        <div class="topnav">
+        <ul>
+          <li ui-sref-active="active" ui-sref="public.home"> <i class="fa fa-home">&nbsp;&nbsp;&nbsp;</i><a href="#">HOME</a></li>
+          <li ui-sref-active="active" ui-sref="public.menu"><i class="fa fa-book">&nbsp;&nbsp;&nbsp;</i><a href="#" >BOOKS</a></li>
+          <li ui-sref-active="active" ui-sref="public.contacts"><i class="fa fa-phone">&nbsp;</i><a href="#">CONTACTS</a></li>
+          <li><i class="fa fa-user">&nbsp;&nbsp;&nbsp;</i><a href="#">ABOUT US</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+
+    <ui-view>
+      <div class="uiview">
+        <h2>Loading Site...</h2>
+      </div>
+    </ui-view>
+    </main>
+
+    <footer>
+         
+      <div class="row">
+        <div class="column">
+          <div class="shift">
+          <h2>FEEDBACK</h2>
+          <hr>
+          <input type="text" placeholder="EMAIL-ID" class="email"><br><br>
+          <input type="text" class="comment" placeholder="COMMENTS"><br><br>
+          <button class="submitbutton">SUBMIT</button>
+        </div>
+        </div>
+        <div class="column">
+          <h2>CONTACTS</h2>
+          <hr>
+          <a>PHONE NO: </a>12465789<br><br>
+          <a>EMAIL ID: </a>ASDFGHKH12423@GMAIL.CON
+        </div>
+      </div>
+            <div class="text-center">
+                &copy; Copyright SACHIN MISHRA <script>document.write(new Date().getFullYear())</script> |
+                <a ui-sref="admin.auth">Admin</a></div>
+        </div>
+    </footer>
+
+
+    <!-- Libs -->
+    <script src="lib/jquery-2.1.4.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Main Restaurant Module -->
+    <script src="src/bookwebsite.module.js"></script>
+
+    <!-- Common Module -->
+    <script src="src/common/common.module.js"></script>
+    <script src="src/common/loading/loading.component.js"></script>
+    <script src="src/common/loading/loading.interceptor.js"></script>
+    <script src="src/common/menu.service.js"></script>
+    <script src="src/common/user.service.js"></script>
+
+    <!-- Public Module -->
+    <script src="src/public/public.module.js"></script>
+    <script src="src/public/public.routes.js"></script>
+    <script src="src/public/menu-category/menu-category.component.js"></script>
+    <script src="src/public/menu-items/menu-items.controller.js"></script>
+    <script src="src/public/menu/menu.controller.js"></script>
+    
+</body>
+</html>
+

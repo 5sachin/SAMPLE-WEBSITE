@@ -1,0 +1,22 @@
+<div class="container">
+  <h2 id="menu-categories-title" class="text-center">BOOK DETAILS</h2>
+  	<table style="width:100%">
+  <tr>
+    <th>ID</th>
+    <th>EMAIL-ID</th>
+    <th>FIRST NAME</th>
+    <th>LAST NAME</th>
+    <th>AVATAR</th>
+  </tr>
+  <tbody ng-repeat="employe in menuCtrl.menuCategories">
+  	<tr>
+                    <td>{{menuCtrl.menuCategories.data[$index].id}}</td>
+                    <td>{{menuCtrl.menuCategories.data[$index].email}}</td>
+                    <td>{{menuCtrl.menuCategories.data[$index].first_name}}</td>
+                    <td>{{menuCtrl.menuCategories.data[$index].last_name}}</td>
+                    <td>{{menuCtrl.menuCategories.data[$index].avatar}}</td>
+                </tr>
+  </tbody>
+</table>
+  
+</div>
