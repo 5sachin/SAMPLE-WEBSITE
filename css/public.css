@@ -228,3 +228,10 @@ th {
 table {
   border-spacing: 5px;
 }
+
+
+
+.container{
+  display: table;
+  box-sizing: border-box;
+}
