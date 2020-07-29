@@ -1,25 +1,38 @@
 <!DOCTYPE>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 	<title>ONLINE BOOKS</title>
-	<!-- <link rel="stylesheet"  href="/css/bootstrap.min.css"> -->
     <link rel="stylesheet"  href="css/book.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body ng-app="bookwebsite">
   <loading class="loading-indicator"></loading>
 	<header>
-        <div class="topnav">
-        <ul>
-          <li ui-sref-active="active" ui-sref="public.home"> <i class="fa fa-home">&nbsp;&nbsp;&nbsp;</i><a href="#">HOME</a></li>
-          <li ui-sref-active="active" ui-sref="public.menu"><i class="fa fa-book">&nbsp;&nbsp;&nbsp;</i><a href="#" >BOOKS</a></li>
-          <li ui-sref-active="active" ui-sref="public.contacts"><i class="fa fa-phone">&nbsp;</i><a href="#">CONTACTS</a></li>
-          <li><i class="fa fa-user">&nbsp;&nbsp;&nbsp;</i><a href="#">ABOUT US</a></li>
-        </ul>
-      </div>
+        <div class="topnav" id="myTopnav">
+  <a ui-sref-active="active" ui-sref="public.home">Home</a>
+  <a ui-sref-active="active" ui-sref="public.menu">Books</a>
+  <a ui-sref-active="active" ui-sref="public.contacts">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+
+  </a>
+</div>
     </header>
+    <script>
+      function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
 
     <main>
 

@@ -1,22 +1,15 @@
-<div class="container">
-  <h2 id="menu-categories-title" class="text-center">BOOK DETAILS</h2>
-  	<table style="width:100%">
-  <tr>
-    <th>ID</th>
-    <th>EMAIL-ID</th>
-    <th>FIRST NAME</th>
-    <th>LAST NAME</th>
-    <th>AVATAR</th>
-  </tr>
-  <tbody ng-repeat="employe in menuCtrl.menuCategories">
-  	<tr>
-                    <td>{{menuCtrl.menuCategories.data[$index].id}}</td>
-                    <td>{{menuCtrl.menuCategories.data[$index].email}}</td>
-                    <td>{{menuCtrl.menuCategories.data[$index].first_name}}</td>
-                    <td>{{menuCtrl.menuCategories.data[$index].last_name}}</td>
-                    <td>{{menuCtrl.menuCategories.data[$index].avatar}}</td>
-                </tr>
-  </tbody>
-</table>
+<!-- <input type="text" ng-model='test'>
+<ul>
+  <li ng-repeat="x in menuCtrl.menuCategories | filter : test">
+    {{ x }}
+  </li>
+</ul> -->
+<div ng-repeat="employe in menuCtrl.menuCategories" class="grid-container">
+  <div class="grid-item" ui-sref="public.menuitem">
+    ID: {{menuCtrl.menuCategories.data[$index].id}}<br>
+    FIRST NAME: {{menuCtrl.menuCategories.data[$index].first_name}}<br>
+    LAST NAME: {{menuCtrl.menuCategories.data[$index].last_name}}<br>
+    EMAIL: {{menuCtrl.menuCategories.data[$index].email}}
+  </div>
   
 </div>

@@ -184,6 +184,18 @@ h3.menu-item-title {
   }
 }
 
+@media (max-width: 479px) {
+
+  .grid-container{
+    display: block;
+    vertical-align: text-bottom; 
+  }
+  .grid-item{
+    display: block;
+    vertical-align: text-bottom; 
+  }
+}
+
 .button{
   align-content: center;
 }
@@ -214,24 +226,28 @@ a{
   font-size: 1.5em;
   text-decoration: none;
 }
-
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+.btn-primary{
+  text-align: center;
+  width: 170%;
+  align-self: center;
 }
-th, td {
-  padding: 15px;
-}
-th {
-  text-align: left;
-}
-table {
-  border-spacing: 5px;
-}
-
 
 
 .container{
   display: table;
   box-sizing: border-box;
+}
+
+
+main .grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+main .grid-item{
+  border:3px solid black;
+  width: 350px;
+  height: 200px;
+  padding: 20px;
 }
